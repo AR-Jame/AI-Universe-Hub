@@ -7,9 +7,66 @@
     <title>AI universe Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/da16072240.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="text-5xl font-semibold text-center mt-7">AI Universe Hub</h1>
+    </header>
+    <main class="py-10">
+        <div class="text-center">
+            <button class="btn btn-neutral">Sort by Date</button>
+        </div>
+        <div id="divContainar" class="grid grid-cols-4 gap-7">
+        </div>
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box space-y-5">
+                    <div class="bg-[#eb575735] space-y-10 rounded-2xl p-7 border border-[#EB5757]">
+                        <p id="description" class="text-xl font-semibold"></p>
+                        <div class="flex gap-4 w-full">
+                            <p class="p-6 rounded-2xl bg-white font-semibold">$10/month Basic</p>
+                            <p class="p-6 rounded-2xl bg-white font-semibold">$10/month Basic</p>
+                            <p class="p-6 rounded-2xl bg-white font-semibold">Contact us Enterprise</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="text-xl font-bold">Features</p>
+                                <ul id="featureUL" class="list-disc pl-3 text-[#000]">
+
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold">Integrations</p>
+                                <ul id="integration" class="list-disc pl-3">
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card bg-base-100 border">
+                            <figure class="px-10 pt-10">
+                                <img src="" id="modalImg" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Shoes!</h2>
+                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action text-center">
+                        <form method="dialog">
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+    </main>
 
     <script src="./js/index.js"></script>
 </body>
